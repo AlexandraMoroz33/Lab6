@@ -7,21 +7,21 @@
 ## Installation
 
 1. Clone the repository:
-   git clone https://github.com/AlexandraMoroz33/Lab6.git
-   cd Lab6
+ -  git clone https://github.com/AlexandraMoroz33/Lab6.git
+ -  cd Lab6
 
 2. Install dependencies
-   pip install -r requirements.txt
-   pip install fastapi uvicorn sqlalchemy pymysql
+ -  pip install -r requirements.txt
+ -  pip install fastapi uvicorn sqlalchemy pymysql
 
 3. Configure the database
-   Open database.py and update your MySQL connection string:
-   DATABASE_URL = "mysql+pymysql://root@localhost:3306/ji9star"
+  - Open database.py and update your MySQL connection string:
+  - DATABASE_URL = "mysql+pymysql://root@localhost:3306/ji9star"
 
-   Make sure the database ji9star exists. If not, create it using MySQL:
-   CREATE DATABASE ji9star;
+  - Make sure the database ji9star exists. If not, create it using MySQL:
+  - CREATE DATABASE ji9star;
 
 4. Run the API server
-   uvicorn main:app --reload
-   Once the server is running, you can access:
-   http://127.0.0.1:8000/docs
+  - uvicorn main:app --reload
+  - Once the server is running, you can access:
+  - http://127.0.0.1:8000/docs
